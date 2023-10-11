@@ -51,7 +51,6 @@ li a{
 }
 
 li a:hover{
-  /* opacity:0.5 ;  */
   text-decoration: underline 3px solid blueviolet;
   padding-bottom:2px;
   border-bottom:3px;
@@ -59,12 +58,6 @@ li a:hover{
   animation-name: text-decoration;
   
 }
-
-/* @keyframes text-decoration {
-  25%{text-decoration: underline crimson;}
-  75%{text-decoration:underline orange;}
-  100%{text-decoration:underline blueviolet ;}
-} */
 
 li a:active{
   transition: all 0.5s;
@@ -113,7 +106,6 @@ h1 span{
   object-fit: contain;
   width: 200px;
   border-radius:175px;
-  /* margin-right: 50px; */
   
 }
 
@@ -174,7 +166,7 @@ h1 span{
  text-align: center;
  justify-content: center;
  gap: 10px;
- margin-left: 45px;
+ margin-left: 38px;
  margin-right: 20px;
 }
 
@@ -206,7 +198,6 @@ h1 span{
     margin-top: 10px; 
  } 
 
-
 .content{
   display: grid;
   grid-template-columns:repeat(1fr);
@@ -214,3 +205,49 @@ h1 span{
   padding-top:10px;
   border-radius: 10px;
 }
+   /* Here are the styles for PORTFOLIO-EXPERIENCE */
+.experience-heading{
+  text-align: center;
+  font-weight: 700;
+  margin-top: 70px;
+  margin-bottom:50px;
+  color: blueviolet;
+}
+
+.experience-container{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 38px;
+  margin-right: 20px;
+}
+
+.content-experience{
+  display: grid;
+  grid-template-columns:repeat(1fr);
+  background-color: dodgerblue;
+  padding-top:10px;
+  border-radius: 10px;
+}
+
+.experience-know-me{
+  margin-top:80px;
+  color:black;
+  text-align: center;
+  font-weight: 600;
+  opacity: 0.3;
+}
+
+.experience-text{
+  margin-top:10px;
+  font-size:large;
+  font-weight: 600;
+  color:darkblue;
+}
+
+.experience-message{
+  margin-top: 10px; 
+} 
+
+ 
