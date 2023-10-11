@@ -11,16 +11,16 @@ body{
 
 .nav-header{
   display: grid;
-   grid-template-columns: 0fr 3fr ;
+  grid-template-columns: 0fr 3fr ;
   justify-content: center;
   height: 75px;
   background-color:white;
-  border-bottom: 1px solid rgb(213, 217, 217);
+  border-bottom: 2px solid rgb(213, 217, 217);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  
+  z-index: 10;
 }
 
 .nav-link{
@@ -55,9 +55,16 @@ li a:hover{
   text-decoration: underline 3px solid blueviolet;
   padding-bottom:2px;
   border-bottom:3px;
-  transition: all 0.125s;
+  transition: all 1.5;
+  animation-name: text-decoration;
   
 }
+
+/* @keyframes text-decoration {
+  25%{text-decoration: underline crimson;}
+  75%{text-decoration:underline orange;}
+  100%{text-decoration:underline blueviolet ;}
+} */
 
 li a:active{
   transition: all 0.5s;
@@ -76,6 +83,134 @@ h1{
 h1 span{
   color:orange;
   font-weight: 800;
+}
+
+.background-image{
+  position: relative;
+ background-image:url(background-image.jpg) ;
+}
+
+
+.info-owner-portfolio-container{
+  display: flex;
+  text-align:center ;
+  justify-content: center;
+   align-items: center;
+   margin-right: 100px;
+   margin-top: 120px;
+   column-gap: 50px;
 
 }
 
+.info-owner-portfolio{
+  margin-top:30px;
+   margin-right: 50px; 
+  line-height: 28px;
+  word-spacing: 2px;
+}
+
+.owner-image{
+  object-fit: contain;
+  width: 200px;
+  border-radius:175px;
+  /* margin-right: 50px; */
+  
+}
+
+.owner-greetings{
+  font-size: x-large;
+  color:black;
+}
+
+ .owner-name{
+  font-weight: 900;
+  margin-top: 10px;
+  font-size:larger;
+}
+
+.owner-job{
+  font-weight:bold;
+}
+
+.btn-download-cv,.btn-contact-info{
+  padding:4px 3px;
+  border-radius: 15px;
+  border: none;
+  
+}
+
+.btn-download-cv:hover{
+  background-color: rgb(213, 217, 217);
+  cursor:pointer;
+}
+
+.btn-download-cv:active{
+  background-color:rgb(213, 217, 217) ;
+  opacity: 0.5;
+}
+
+.btn-contact-info:hover{
+  background-color: rgb(213, 217, 217);
+  cursor: pointer;
+}
+
+.btn-contact-info:active{
+  background-color:rgb(213, 217, 217) ;
+  opacity: 0.5;
+}
+
+.social-info{
+  margin-left: 12px;
+  margin-top: 5px;
+}
+
+.btn-link-In,.btn-github{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+  
+.about-container{
+ display: flex;
+ text-align: center;
+ justify-content: center;
+ gap: 10px;
+ margin-left: 45px;
+ margin-right: 20px;
+}
+
+.about-know-me{
+  margin-top:80px;
+  color:black;
+  text-align: center;
+  font-weight: 600;
+  opacity: 0.3;
+}
+
+.about-heading{
+  text-align: center;
+  font-weight: 700;
+  margin-top: 70px;
+  margin-bottom:50px;
+  color: blueviolet;
+}
+
+.about-text{
+  margin-top:10px;
+  font-size:large;
+  font-weight: 600;
+  color:darkblue;
+  
+}
+
+  .about-message{
+    margin-top: 10px; 
+ } 
+
+
+.content{
+  display: grid;
+  grid-template-columns:repeat(1fr);
+  background-color: greenyellow;
+  padding-top:10px;
+  border-radius: 10px;
+}
