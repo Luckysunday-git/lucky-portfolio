@@ -7,6 +7,7 @@
 body{
   font-family: arial,sans-serif;
   font-style: normal;
+  background-color: rgba(74, 210, 149, 0.5);
 }
 
 .nav-header{
@@ -14,8 +15,8 @@ body{
   grid-template-columns: 0fr 3fr ;
   justify-content: center;
   height: 75px;
-  background-color:white;
-  border-bottom: 2px solid rgb(213, 217, 217);
+  background-color:#5f7d95;
+  border-bottom: 3px solid rgba(101, 122,24) ;
   position: fixed;
   top: 0;
   left: 0;
@@ -44,7 +45,7 @@ ul{
 }
 
 li a{
-  color:#8a2be2;
+  color:white;
   text-decoration: none;
   padding: 25px;
   font-weight: 750;
@@ -56,7 +57,7 @@ li a:hover{
   border-bottom:3px;
   transition: all 1.5;
   animation-name: text-decoration;
-  
+  opacity: 0.5;
 }
 
 li a:active{
@@ -66,7 +67,7 @@ li a:active{
 }
 
 h1{
-  color:blueviolet;
+  color:black;
   font-size: 60;
   font-weight:700;
   margin-left: 20px;
@@ -89,15 +90,15 @@ h1 span{
   text-align:center ;
   justify-content: center;
    align-items: center;
-   margin-right: 100px;
-   margin-top: 120px;
+   /* margin-right: 100px; */
+   margin-top: 160px;
    column-gap: 50px;
 
 }
 
 .info-owner-portfolio{
   margin-top:30px;
-   margin-right: 50px; 
+  /* margin-right: 50px;  */
   line-height: 28px;
   word-spacing: 2px;
 }
@@ -118,17 +119,26 @@ h1 span{
   font-weight: 900;
   margin-top: 10px;
   font-size:larger;
+  line-height: 25px;
 }
 
 .owner-job{
   font-weight:bold;
+  line-height:20px ;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .btn-download-cv,.btn-contact-info{
   padding:4px 3px;
   border-radius: 15px;
   border: none;
-  
+  gap: 5px;
+}
+
+.btn-contact-info{
+  margin-top:10px;
+
 }
 
 .btn-download-cv:hover{
@@ -250,4 +260,72 @@ h1 span{
   margin-top: 10px; 
 } 
 
- 
+.project-container{
+  
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
+  /* margin-left: 39px ; */
+  /* margin-right:39px; */
+  row-gap: 15px;
+  column-gap: 15px;
+  border-top-left-radius: 12px;
+  border-top-left-radius: 12px;
+  background-color:black;
+  padding-bottom: 10px;
+}
+
+
+.images{
+  width: 340px; 
+  border-radius: 10px;
+}
+
+.project-name{
+  text-align: center;
+  margin-top: 8px;
+
+}
+
+.project-name{
+  align-items: center; 
+}
+
+.project-name span{
+  font-weight: bold;
+  font-size:large;
+  color:orange;
+}
+
+.project-button{
+  margin-left: 10px;
+  padding: 8px 8px 5px 5px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size:large;
+  animation-name: open-me;
+  animation-direction:reverse;
+  animation-duration: 5s;
+  animation-delay:10s ;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  transform-origin: -50%;
+}
+
+@keyframes open-me{
+  15%{transform: scale(-0.1);}
+
+  100%{background-color: deeppink; color: white;
+  border-radius: 100%;}
+
+}
+
+.project-button:hover{
+  cursor: pointer;
+}
+
+
+
+
