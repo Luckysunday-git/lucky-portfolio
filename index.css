@@ -7,7 +7,9 @@
 body{
   font-family: arial,sans-serif;
   font-style: normal;
-  background-color: rgba(74, 210, 149, 0.5);
+  background-color: black;
+  /* background-color: lightseagreen; */
+  /* background-color: rgba(74, 210, 149, 0.5); */
 }
 
 .nav-header{
@@ -20,12 +22,14 @@ body{
   position: fixed;
   top: 0;
   left: 0;
+  bottom:0;
   right: 0;
   z-index: 10;
 }
 
 .nav-link{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   color: blueviolet;
@@ -38,10 +42,14 @@ body{
    margin-left: 14px;
 }
 
-ul{
+/* li{
+  text-align: center;
+} */
+.ul-navlinks{
   display: flex;
   list-style: none;
-  
+  align-items: center;
+
 }
 
 li a{
@@ -84,35 +92,42 @@ h1 span{
  background-image:url(background-image.jpg) ;
 }
 
-
 .info-owner-portfolio-container{
   display: flex;
+  flex-wrap: wrap;
   text-align:center ;
   justify-content: center;
-   align-items: center;
-   /* margin-right: 100px; */
-   margin-top: 160px;
+  align-items: center;
+   margin-top: 140px;
+   margin-right: 20px;
    column-gap: 50px;
-
+   width:100%;
 }
 
 .info-owner-portfolio{
-  margin-top:30px;
+  margin-top:35px;
+  background-color: rgb(213, 217, 217);
   /* margin-right: 50px;  */
   line-height: 28px;
   word-spacing: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;;
 }
 
 .owner-image{
+  margin-top: 10px;
   object-fit: contain;
-  width: 200px;
+  width: 250px;
   border-radius:175px;
   
 }
 
 .owner-greetings{
   font-size: x-large;
-  color:black;
+  /* color:white; */
 }
 
  .owner-name{
@@ -120,6 +135,7 @@ h1 span{
   margin-top: 10px;
   font-size:larger;
   line-height: 25px;
+  /* color: white; */
 }
 
 .owner-job{
@@ -127,6 +143,7 @@ h1 span{
   line-height:20px ;
   margin-top: 10px;
   margin-bottom: 5px;
+  /* color:white; */
 }
 
 .btn-download-cv,.btn-contact-info{
@@ -157,7 +174,6 @@ h1 span{
 }
 
 .btn-contact-info:active{
-  background-color:rgb(213, 217, 217) ;
   opacity: 0.5;
 }
 
@@ -172,81 +188,135 @@ h1 span{
 }
   
 .about-container{
+   background-color: rgba(74, 210, 149, 0.5);
  display: flex;
- text-align: center;
- justify-content: center;
- gap: 10px;
- margin-left: 38px;
- margin-right: 20px;
+ flex-wrap: wrap;
+ flex-direction: column-reverse;
+ text-align:center;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+ margin-right: 38px;
+ margin-left:38px;
+ /* flex-direction: column; */
+ justify-content:start;
+ row-gap: 20px;
+ column-gap: 50px;
 }
 
 .about-know-me{
   margin-top:80px;
-  color:black;
+  color:whitesmoke;
   text-align: center;
   font-weight: 600;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .about-heading{
   text-align: center;
   font-weight: 700;
+  font-size: x-large;
   margin-top: 70px;
   margin-bottom:50px;
-  color: blueviolet;
+  color: orange;
 }
 
 .about-text{
   margin-top:10px;
-  font-size:large;
+  font-size:x-large;
   font-weight: 600;
   color:darkblue;
-  
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
-  .about-message{
-    margin-top: 10px; 
+  .about-message-edu,.about-message-lang{
+    margin-top: 10px;
+    background-color:white;
+    color:black;
+    padding-top: 10px;
+    text-align: center;
  } 
+
+ .about-message-goal{
+  margin-top: 10px;
+  background-color:white;
+  color:black;
+  padding-top: 10px;
+  text-align: center;
+ }
+
+
+ .message{
+  background-color: lightblue;
+  
+ }
 
 .content{
   display: grid;
-  grid-template-columns:repeat(1fr);
-  background-color: greenyellow;
+  background-color:rgba(110, 163, 51, 0.4);;;
   padding-top:10px;
   border-radius: 10px;
+  text-align: center;
 }
    /* Here are the styles for PORTFOLIO-EXPERIENCE */
 .experience-heading{
   text-align: center;
-  font-weight: 700;
+  font-weight: bold;
+  font-size: x-large;
   margin-top: 70px;
   margin-bottom:50px;
   color: blueviolet;
 }
 
-.experience-container{
+.experience-frontend-container{
+  /* display:grid; */
   display: flex;
-  text-align: center;
-  justify-content: center;
-  gap: 10px;
-  margin-left: 38px;
-  margin-right: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap:15px;
+  background-color: darkblue;
+   text-align: center;
+   border-top-right-radius: 20px;
+   border-top-left-radius: 20px;
+   overflow: hidden;
+   margin-right: 38px;
+   margin-left: 38px;
 }
 
-.content-experience{
-  display: grid;
-  grid-template-columns:repeat(1fr);
-  background-color: dodgerblue;
-  padding-top:10px;
-  border-radius: 10px;
+ .frontend,.job-experience{
+  background-color: orange;
+  padding: 5px 5px;
+  font-weight:bold;
+  font-size:large;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+ }
+
+.list-items{
+  padding-top: 5px;
+  line-height:25px;
+  font-weight:bold;
+  background-color: lightskyblue;
+  padding-left: 20px;
+  padding-right:20px;
+  padding-bottom: 15px;
+  border-top-right-radius: 50px;
+  gap:10px;
+  /* border-bottom-right-radius: 50px; */
+  /* border-bottom-left-radius: 50px; */
+  border-top-left-radius: 50px;
+  list-style-type:none;
+  width:400px;
 }
 
 .experience-know-me{
   margin-top:80px;
-  color:black;
+  color:whitesmoke;
   text-align: center;
   font-weight: 600;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .experience-text{
@@ -254,19 +324,35 @@ h1 span{
   font-size:large;
   font-weight: 600;
   color:darkblue;
+  border-bottom: 3px solid whitesmoke;
 }
 
-.experience-message{
-  margin-top: 10px; 
-} 
+
+.years-experience>p{
+  font-weight:bold;
+}
+
+.number-experience{
+  padding-top: 20px;
+  line-height:25px;
+  background-color:lightskyblue ;
+  font-size:large;
+  padding-bottom:50px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  font-weight:bold;
+  width: 350px;
+
+  
+}
 
 .project-container{
   
   display:flex;
   flex-wrap: wrap;
   width:100%;
-  /* margin-left: 39px ; */
-  /* margin-right:39px; */
+  margin-left: 39px ;
+  margin-right:39px;
   row-gap: 15px;
   column-gap: 15px;
   border-top-left-radius: 12px;
@@ -275,15 +361,17 @@ h1 span{
   padding-bottom: 10px;
 }
 
-
 .images{
   width: 340px; 
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 .project-name{
   text-align: center;
   margin-top: 8px;
+  font-weight:700;
+  font-size: x-large;
 
 }
 
@@ -307,7 +395,7 @@ h1 span{
   animation-name: open-me;
   animation-direction:reverse;
   animation-duration: 5s;
-  animation-delay:10s ;
+  animation-delay:7s ;
   animation-timing-function:ease-in-out;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
@@ -318,13 +406,193 @@ h1 span{
   15%{transform: scale(-0.1);}
 
   100%{background-color: deeppink; color: white;
-  border-radius: 100%;}
+  }
 
 }
 
 .project-button:hover{
   cursor: pointer;
 }
+
+/* Here are styles for PORTFOLIO-CONTACT */
+
+.contact-container{
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
+  /* margin-left: 39px ; */
+  /* margin-right:39px; */
+  row-gap: 15px;
+  column-gap: 15px;
+  border-top-left-radius: 12px;
+  border-top-left-radius: 12px;
+  background-color:black;
+  padding-bottom: 10px;
+}
+
+.contact-heading{
+  text-align: center;
+  font-weight: 700;
+  font-size: x-large;
+  margin-top: 70px;
+  margin-bottom:50px;
+  color: blueviolet;
+}
+
+/* @media(max-width: 700px){
+  .menu-button{
+    display: block;
+  }
+} */
+
+/* @media(max-width: 700px){
+  .nav-link{
+    display: none;
+  }
+} */
+
+.about-messages{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.write1,.write2,.write3,.write4,.experience-years{
+  margin-bottom: 10px;
+  display: flex;
+  justify-self: auto;
+  line-height:35px;
+  padding-right:20px;
+  padding-left:20px; 
+  list-style-type:square;
+  text-align: center;
+  font-weight:bold;
+  font-size:x-large;
+  /* overflow: hidden; */
+}
+  /* Here are the styles for contact-portfolio */
+
+ 
+.firstname,.lastname,.phonenumber,.email{
+  display:flex;
+}
+
+.label{
+  padding-right: 10px;
+  font-weight:bold;
+}
+  
+
+
+/* nav{
+  display: block;
+  transform-origin: top center;
+  animation-name: showMenu;
+  animation-duration:  0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+} */
+
+/* 
+@keyframes showMenu{
+  0%{transform: scaleY(0);}
+
+  80%{transform: scaleY(1.2);}
+
+  100%{transform: scaleY(1);}
+}  */
+
+/* nav ul{
+  list-style-type: none;
+  display: flex; 
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}   */
+
+
+/* nav li {
+  padding:0.5rem; 
+  border-top: 1px solid var(--HEADER-COLOR);
+
+} */
+
+
+/* nav a{
+  display: block;
+  text-align: center;
+  width: 80%;
+  width: auto;
+
+}   */
+
+/* nav a:any-link {
+  color:var(--HEADER-COLOR);
+  font-weight: bold;
+  text-decoration: none;
+}  */
+
+
+/* nav a:hover,
+nav a:focus { 
+  transform: scale(0);
+  transition: all 0.3s;
+}   */
+
+/*up there NAV display was BLOCK and the nav links were shown
+but now nav is NONE which makes the nav links disappear so that 
+the animation up there will make it appear after
+the 0.5s animation duration.*/
+
+/* nav{
+  display: block;
+} */
+
+
+/* span{
+  color:black;
+
+} */
+
+/* .logo,.span{
+  border-radius: 30px;
+  padding-left:10px;
+  padding-right:10px; 
+} */
+
+/* h3{
+  background-color:rgb(184, 34, 11); 
+  border-radius: 12px;
+} */
+
+/* @media(max-width:700px){
+.menu-button{
+  display: block;
+}
+} */
+
+/* @media(max-width:700px){
+  .menu-button{
+    display: block;
+  }
+} */
+
+@media(max-width:700px){
+  .nav-link{
+    display: none;
+  }
+
+}
+
+/* @media(max-width: 700px){
+  .menu-button{
+    display:none;
+  }
+} */
+
+
+
+
 
 
 

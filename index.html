@@ -5,22 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="smallScreenNavbar.css">
   </head>
   <body>
+      
     <!-- nav header -->
     <div class="nav-header">
       <div class="nav-logo"><h1>L<span>K</span></h1></div>  
         <!-- nav link -->
+
         <div class="nav-link">
-        <ul>
+        <ul class="ul-navlinks">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#hobby">Hobby</a></li>
+
+          
+      <button class="menu-button">
+        <!-- this empty div down helps to form the menu-icon(the
+        middle icon) -->
+        <div class="menu-icon"></div> 
+      </button>      
         </ul>
       </div>
+
     </div>
+  
     <div class="info-owner-portfolio-container">
       <img class="owner-image" src="portfolio-images/background-image.jpg">
         <div class="info-owner-portfolio"><span class="owner-greetings">Hello, I'm</span>
@@ -44,10 +56,20 @@
     <div class="about-container">
       <div class="about-education">
         <div class="content"><span class="about-text">Education</span>
-      <div class="about-message">
+      <div class="about-message-edu">
         <p class="message">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.Cupiditate quis consectetur culpa corrupti vero nihil odio, amet nostrum harum quam?
+          <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error vitae dolor. Voluptatibus nisi debitis ducimus assumenda, impedit quisquam nam? -->
         </p>
+
+        <ol class="write1">
+          <li>Done with university education in Masakuseth Universty, London.</li>
+         </ol>
+         <ol class="write2">
+          <li>Finished a high school in Thumbnail Computer Science, india.</li>
+         </ol>
+         <ol class="write3">
+          <li>I'm still learning everyday.</li>
+         </ol>
       </div>
     </div>
     </div>
@@ -55,10 +77,25 @@
     <div class="about-education">
       <div class="content">
           <span class="about-text">Language</span>
-        <div class="about-message">
+        <div class="about-message-lang">
           <p class="message">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id sapiente qui, officia odio inventore dicta nostrum debitis rerum deleniti enim!
+            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia perferendis accusantium, cupiditate quam nulla sed delectus amet saepe obcaecati! -->
           </p>
+          
+          <ol class="write1">
+            <li>I'm multi-lingual; very fluent in speaking at list 5 international languages including:
+            </li>
+          </ol>
+            <ol class="write2">
+              <li><strong>English</strong></li>
+            </ol>
+           </ol>
+           <ol class="write3">
+            <li><strong>Indian</strong></li>
+           </ol>
+           <ol class="write4">
+            <li><strong>French, Chineese etc.</strong></li>
+           </ol>
         </div>
       </div>
     </div>
@@ -66,41 +103,60 @@
             <!-- About-Language -->
     <div class="about-education">
       <div class="content">
-        <span class="about-text">Hobby</span>
-        <div class="about-message">
+        <span class="about-text">My Goals</span>
+        <div class="about-message-goal">
           <p class="message">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis eaque ratione reprehenderit, aspernatur odit nam quidem. Earum, necessitatibus blanditiis!
+            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis eaque ratione reprehenderit, aspernatur odit nam quidem. Earum, necessitatibus blanditiis! -->
           </p>
+
+            <ol class="write1">
+              <li>
+                As a passionate developer, one of my greatest goals is to solve websites 
+                related problems that we face everyday.
+              </li>
+           </ol>
+           <ol class="write2">
+            <li>
+              To help tech companies and individual organisations have their website    uniqueness through creative and maintainable lines of my code.
+            </li>
+           </ol>
+           <ol class="write3">
+            <li>To create the best world of technology, the type I always dream of.</li>
+           </ol>
          </div>
         </div>
       </div>
     </div>
 
-        <!-- Experience -->
+        <!-- My Experience -->
       <p class="experience-know-me">My experience</p>
       <div class="experience-heading"><p>EXPERIENCE</p></div>
 
-      <div class="experience-container">
-        <div class="experience-education">
-          <div class="content-experience"><span class="experience-text">Job Experience</span>
-        <div class="experience-message">
-          <p class="message">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur voluptatum nesciunt, cupiditate tenetur voluptatem dicta distinctio voluptas consequatur totam.
+       <div class="experience-frontend-container">
+        <div class="frontend-stack">
+          <ul class="stack1">
+            <div class="frontend">Frontend</div>
+             <div class="list-items">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>React</li>
+            </div>
+          </ul>
+        </div>
+        <div class="years-experience">
+          <div class="job-experience">Job Experience</div>
+          <div class="number-experience"><p>2years+
+            <div>Experience</div>
           </p>
         </div>
+        </div>
        </div>
-      </div>
-
-      <div class="experience-education">
-        <div class="content-experience"><span class="experience-text">Life Experience</span>
-      <div class="experience-message">
-        <p class="message">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur voluptatum nesciunt, cupiditate tenetur voluptatem dicta distinctio voluptas consequatur totam.
-        </p>
       </div>
      </div>
     </div>
     </div>
+    
        <!-- My projects -->
     <p class="about-know-me">My recent projects</p>
     <div class="about-heading"><p>PROJECTS</p></div>
@@ -162,19 +218,45 @@
       </div>
      </div>
 
+      <!-- Portfolio- Contact -->
      <p class="about-know-me">You can contact me</p>
-     <div class="about-heading"><p>Contact</p></div>
+     <div class="contact-heading"><p>Contact</p></div>
 
-     <div class="about-container">
-      <div class="about-education">
-        <div class="content"><span class="about-text">Education</span>
-      <div class="about-message">
-        <p class="message">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque voluptas, voluptatem numquam quisquam facere, dolores ad excepturi ratione facilis sapiente, eveniet commodi sequi consequuntur? Amet quia ipsam iusto magnam molestiae illum? Nulla asperiores fuga earum alias molestias sit repellendus!
-        </p>
+     <div class="contact-container1">
+      <div class="contact-container2">
+        <div class="content3"><span class="about-text1">Contact</span>
+      <div class="about-messages">
+        <div class="message1">
+             <div class="firstname">
+              <label for="" class="label">
+              First Name<input type="text" placeholder="First name" class="firstname">
+             </label>
+             </div> 
+             
+             <div class="lastname">
+              <label for="" class="label">
+                Last Name<input type="text" class="lastname"placeholder="Last name"><br>
+              </label>
+            </div>
+              <div class="label"> 
+                 <label for="phone">
+                   Phone Number
+                  <input type="number" class="phonenumber" placeholder="+2348118254967"><br>
+                  </label>
+                </div> 
+                <div class="label"><br>
+                 <label for="email" class="email">
+                  <br>
+                   Email
+                  <input type="text" class="email"placeholder="luckysunday001@gmail.com">
+                 </label>
+               </div>
+              </div>
       </div>
-    </div>
+     </div>
     </div>
    </div>
+   
+   <script src="portfolio.js"></script>
   </body>
 </html>
