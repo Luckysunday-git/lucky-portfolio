@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="smallScreenNavbar.css">
+    <!-- <link rel="stylesheet" href="smallScreenNavbar.css"> -->
   </head>
   <body>
       
@@ -16,23 +16,33 @@
 
         <div class="nav-link">
         <ul class="ul-navlinks">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#hobby">Hobby</a></li>
+               
+         <div class="smallscreen">
+         <div><li><a href="/index.html">Home</a></li></div>
+         <div> <li><a href="#about">About</a></li></div>
+          <div><li><a href="#experience">Experience</a></li></div>
+          <div><li><a href="#projects">projects</a></li></div>
+          <div><li><a href="#contact">contact</a></li></div>
+        </div>
 
-          
-      <button class="menu-button">
-        <!-- this empty div down helps to form the menu-icon(the
-        middle icon) -->
-        <div class="menu-icon"></div> 
-      </button>      
+          <header>
+            <button class="menu-button">
+              <!-- this empty div down helps to form the menu-icon(the
+              middle icon) -->
+              <div class="menu-icon"></div> 
+            </button>           
+          </header>
+
         </ul>
       </div>
-
+    
     </div>
-  
+      <section id="home" class="section">
+        <div class="title">
+          <h2><span></span></h2>
+        </div>
+      </section> 
+
     <div class="info-owner-portfolio-container">
       <img class="owner-image" src="portfolio-images/background-image.jpg">
         <div class="info-owner-portfolio"><span class="owner-greetings">Hello, I'm</span>
@@ -49,7 +59,14 @@
         </div>
       </div>
     </div>
+
     <!------------- About-------- -->
+
+    <section id="about" class="section">
+      <div class="title">
+        <h2><span></span></h2>
+      </div>
+    </section> 
     <p class="about-know-me">Get to know me</p>
     <div class="about-heading"><p>ABOUT</p></div>
        <!-- About-Education -->
@@ -58,7 +75,6 @@
         <div class="content"><span class="about-text">Education</span>
       <div class="about-message-edu">
         <p class="message">
-          <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error vitae dolor. Voluptatibus nisi debitis ducimus assumenda, impedit quisquam nam? -->
         </p>
 
         <ol class="write1">
@@ -79,9 +95,7 @@
           <span class="about-text">Language</span>
         <div class="about-message-lang">
           <p class="message">
-            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia perferendis accusantium, cupiditate quam nulla sed delectus amet saepe obcaecati! -->
           </p>
-          
           <ol class="write1">
             <li>I'm multi-lingual; very fluent in speaking at list 5 international languages including:
             </li>
@@ -99,39 +113,40 @@
         </div>
       </div>
     </div>
-
-            <!-- About-Language -->
+      <!-- About-Language -->
     <div class="about-education">
       <div class="content">
         <span class="about-text">My Goals</span>
         <div class="about-message-goal">
           <p class="message">
-            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis eaque ratione reprehenderit, aspernatur odit nam quidem. Earum, necessitatibus blanditiis! -->
           </p>
-
             <ol class="write1">
-              <li>
-                As a passionate developer, one of my greatest goals is to solve websites 
-                related problems that we face everyday.
+               <li>
+                As a passionate developer, 
+                one of my greatest goals in life is to solve any websites related problems 
+                that we face everyday.
               </li>
            </ol>
            <ol class="write2">
             <li>
-              To help tech companies and individual organisations have their website    uniqueness through creative and maintainable lines of my code.
+              Also, to help tech companies and individual organisations have their website    unique identity.
             </li>
            </ol>
            <ol class="write3">
-            <li>To create the best world of technology, the type I always dream of.</li>
+            <li>And to create the best world of technology, the type I always dream of.</li>
            </ol>
+          </div>
          </div>
         </div>
-      </div>
-    </div>
-
+       </div>
         <!-- My Experience -->
+        <section id="experience" class="section">
+          <div class="title">
+            <h2><span></span></h2>
+          </div>
+        </section> 
       <p class="experience-know-me">My experience</p>
       <div class="experience-heading"><p>EXPERIENCE</p></div>
-
        <div class="experience-frontend-container">
         <div class="frontend-stack">
           <ul class="stack1">
@@ -156,28 +171,30 @@
      </div>
     </div>
     </div>
-    
        <!-- My projects -->
+       <section id="projects" class="section">
+        <div class="title">
+          <h2><span></span></h2>
+        </div>
+      </section> 
     <p class="about-know-me">My recent projects</p>
     <div class="about-heading"><p>PROJECTS</p></div>
-    
-    <div class="project-container">
+    <div class="project-container js-project-container">
       <div class="image-project">
         <div class="images">
           <img class="images" src="portfolio-images/project.image1.jpg">
         </div>
        <div class="project-name">
         <span class="name">Todo list</span>
-        <button class="project-button">Open Me</button>
+        <button class="project-button  js-open-me" data-todo-list>Open Me</button>
       </div> 
       </div>
-
       <div class="image-project">
         <div class="images">
           <img class="images" src="portfolio-images/project.image1.jpg">
         </div>
        <div class="project-name"><span>Lucky Ecommerce</span>
-        <button class="project-button">Open Me</button>
+        <button class="project-button js-open-me" data-lucky-ecommerce>Open Me</button>
       </div> 
       </div>
 
@@ -186,77 +203,74 @@
           <img class="images" src="portfolio-images/project.image2.jpg">
         </div>
        <div class="project-name"><span>Menu Project</span>
-        <button class="project-button">Open Me</button>
+        <button class="project-button js-open-me" data-menu-project>Open Me</button>
       </div> 
       </div>
-
       <div class="image-project">
         <div class="images">
           <img class="images" src="portfolio-images/project.image2.jpg">
         </div>
        <div class="project-name"><span>Fetch API</span>
-        <button class="project-button">Open Me</button>
+        <button class="project-button js-open-me" data-fetch-api>Open Me</button>
       </div> 
       </div>
-
       <div class="image-project">
         <div class="images">
           <img class="images" src="portfolio-images/project.image3.jpg">
         </div>
        <div class="project-name"><span>Animation project</span>
-        <button class="project-button">Open Me</button>
+        <button class="project-button js-open-me" data-animation-project>Open Me</button>
       </div> 
-      </div>
-
+      </div> 
       <div class="image-project">
         <div class="images">
           <img class="images" src="portfolio-images/project.image3.jpg">
         </div>
        <div class="project-name"><span>Random project</span>
-        <button class="project-button">Open Me</button>
+        <button class="project-button js-open-me" data-random-project>Open Me</button>
        </div> 
       </div>
      </div>
-
       <!-- Portfolio- Contact -->
+      <section id="contact" class="section">
+        <div class="title">
+          <h2><span></span></h2>
+        </div>
+      </section> 
      <p class="about-know-me">You can contact me</p>
      <div class="contact-heading"><p>Contact</p></div>
-
-     <div class="contact-container1">
-      <div class="contact-container2">
-        <div class="content3"><span class="about-text1">Contact</span>
-      <div class="about-messages">
-        <div class="message1">
-             <div class="firstname">
-              <label for="" class="label">
-              First Name<input type="text" placeholder="First name" class="firstname">
-             </label>
-             </div> 
-             
-             <div class="lastname">
-              <label for="" class="label">
-                Last Name<input type="text" class="lastname"placeholder="Last name"><br>
-              </label>
-            </div>
-              <div class="label"> 
-                 <label for="phone">
-                   Phone Number
-                  <input type="number" class="phonenumber" placeholder="+2348118254967"><br>
-                  </label>
-                </div> 
-                <div class="label"><br>
-                 <label for="email" class="email">
-                  <br>
-                   Email
-                  <input type="text" class="email"placeholder="luckysunday001@gmail.com">
-                 </label>
-               </div>
-              </div>
+       </div>
       </div>
+     </div>
+      </div>
+    </div>
+    <div class="contact-container">
+    <div class="number">
+      <a href="tel:+2348118254967" class="number">Call me on: +2348118254967</a>
+    </div>
+    <div class="email">
+      <a href="mailto:luckysunday001@gmail.com" class="email">
+        Send Mail:luckysunday001@gmail.com
+      </a>
+    </div>
+    <div class="social-container">
+      <div class="social-media">
+      <a href="http://whatsapp" class="whatsapp">WhatSapp</a>
+      <a href="http://facebook" class="facebook">facebook</a>
+      <a href="http://linkedIn" class="linkedIn">linkedIn</a>
+      <a href="http://instagram" class="instagram">Instagram</a>
      </div>
     </div>
    </div>
-   
+         <!-- footer-portfolio -->
+   <div class="footer-container">
+      <div class="footer">
+    <div class="footer-name">Lucky Sunday &copy;2023</div>
+    <div class="spacer-footer"></div>
+    <div class="all-right">All right Reserved.</div>
+   </div>
+   </div>
+
    <script src="portfolio.js"></script>
   </body>
 </html>
