@@ -15,11 +15,11 @@
         <!-- nav link -->
 
         <ul class="ul-navlinks">
-         <li><a href="index.html"class="mobile-home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#contact">contact</a></li>
+         <li class="mobile-screen"><a href="index.html"class="mobile-home">Home</a></li>
+          <li class="mobile-screen"><a href="#about">About</a></li>
+          <li class="mobile-screen"><a href="#experience">Experience</a></li>
+          <li class="mobile-screen"><a href="#projects">projects</a></li>
+          <li class="mobile-screen"><a href="#contact">contact</a></li>
         </ul>
         <img class="menu-btn" src="portfolio-images/hamburger-menu.png" alt="">
     </nav>
@@ -28,10 +28,22 @@
           <h2><span></span></h2>
         </div>
       </section> 
+
+      <!-- <div>
+        <span class="dark">Dark</span>
+        <span class="empty-span"></span>
+        <span class="light">Light</span>
+       </div> -->
+
     <div class="info-owner-portfolio-container">
+
+      <div class="dark-theme-container">
+        <button class="light-mode">Light Mode</button>
+       </div>
+
       <img class="owner-image" src="portfolio-images/background-image.jpg">
         <div class="info-owner-portfolio"><span class="owner-greetings">Hello, I'm</span>
-          <div class="owner-name"><p>Lucky Sunday</p>
+          <div class="owner-name"><p class="lucky-name">Lucky Sunday</p>
           </div>
           <p class="owner-job">Frontend Developer</p>
           <a href="#home" download="#home" class="btn-download-cv">Download CV</a>
@@ -101,22 +113,19 @@
     <div class="about-education">
       <div class="content">
         <span class="about-text">My Goals</span>
-        <div class="about-message-goal">
+        <div class="about-message-goal sec show-animation animate">
           <p class="message">
           </p>
-            <ol class="write1 animate1">
-               <li>
-                As a passionate developer, 
-                one of my greatest goals in life is to solve any websites related problems 
-                that we face everyday.
-              </li>
+            <ol class="write1">
+               <li class="write1-goal animate-write1">As a passionate developer, one of my greatest goals in life is to solve any websites relate problems that we face everyday.
+               </li>
            </ol>
-           <ol class="write2 animate2">
+           <ol class="write2 sec animate">
             <li>
               Also, to help tech companies and individual organisations have their website    unique identity.
             </li>
            </ol>
-           <ol class="write3 animate3">
+           <ol class="write3 sec animate">
             <li>And to create the best world of technology, the type I always dream of.</li>
            </ol>
           </div>
@@ -139,7 +148,7 @@
               <li>HTML</li>
               <li>CSS</li>
               <li>Javascript</li>
-              <li>React</li>
+              <li>React JS</li>
             </div>
           </ul>
         </div>
@@ -163,7 +172,7 @@
       </section> 
     <p class="about-know-me">My recent projects</p>
     <div class="about-heading"><p>PROJECTS</p></div>
-    <div class="project-container js-project-container">
+    <div class="project-container project-container1">
       <div class="image-project">
         <div class="images">
           <img class="images" src="portfolio-images/project.image1.jpg">
@@ -181,7 +190,7 @@
         <button class="project-button js-open-me" data-lucky-ecommerce>Open Me</button>
       </div> 
       </div>
-
+  
       <div class="image-project">
         <div class="images">
           <img class="images" src="portfolio-images/project.image2.jpg">
@@ -230,7 +239,7 @@
     </div>
     <div class="contact-container">
     <div class="number">
-      <a href="tel:+2348118254967" class="number">Call me on: +2348118254967</a>
+      <a href="tel:+2348118254967" class="number">Call: +2348118254967</a>
     </div>
     <div class="email">
       <a href="mailto:luckysunday001@gmail.com" class="email">
@@ -249,7 +258,7 @@
          <!-- footer-portfolio -->
    <div class="footer-container">
       <div class="footer">
-    <div class="footer-name">Lucky Sunday &copy; 2023</div>
+    <div class="footer-name">Lucky Sunday &copy;<span class="date">2023</span></div>
     <div class="spacer-footer"></div>
     <div class="all-right">All right Reserved</div>
    </div>

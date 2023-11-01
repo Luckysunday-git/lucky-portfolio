@@ -7,17 +7,17 @@
 html{
   scroll-behavior:smooth;
   transition: all 5s;
+  overflow-x: hidden;
 }
 
 body{
+  overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: arial,sans-serif;
   font-style: normal;
-  background-color: #102a42;
-  /* background-color:rgba(0, 0, 0, 0.777); */
+  background-color: wheat;
   background:linear-gradient(rgba(119, 241, 100, 0.3), #64a7fa37) url(./portfolio-images/background-image.jpg) center/cover no-repeat;
-  /* background-color: lightseagreen; */
-  /* background-color: rgba(74, 210, 149, 0.5); */
+
 }
 
 .nav-header{
@@ -26,8 +26,7 @@ body{
   justify-content: space-between;
   height: 75px;
   padding-right: 60px;
-  background-color:#5f7d95;
-  border-bottom: 3px solid rgba(101, 122,24) ;
+  border-bottom: 1px solid rgba(101, 122,24) ;
   position: fixed;
   top: 0;
   left: 0;
@@ -36,19 +35,30 @@ body{
   z-index: 10;
 }
 
-/* .nav-link{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  /* color: blueviolet; */
-  
-/* } */ 
+.dark-theme-container{
+  position: fixed;
+  top: 80px;
+  padding: 2px 7px;
+  border-radius:2px;
+  background-color: rgba(255, 166, 0, 0.652);
+  z-index: 6;
+  border: 2px solid ghostwhite;
+}
+
+.light-mode{
+  font-weight: 600;
+  color:#484872;
+  border-radius: 10px;
+  padding: 0 2px;
+  transform: translateX(-20px);
+  transition: all 1s ease;
+  cursor:pointer;
+}
 
 .nav-logo{
    width: 50px;
    border-radius: 50px;
-   margin-left: 14px;
+   /* margin-left: 14px; */
 
 }
 
@@ -60,18 +70,22 @@ body{
 }
 
 li a{
-  color:white;
+  color: orange;
   text-decoration: none;
   padding: 25px;
   font-weight: 750;
-  font-size: 5vmin;
+  font-size: 4vmin;
 }
 
+
 li a:hover{
-  text-decoration: underline 3px solid blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline 3px solid rgb(213, 217, 217);
   padding-bottom:2px;
   border-bottom:3px;
-  transition: all 1.5;
+  transition: all 1s ease;
   animation-name: text-decoration;
   opacity: 0.5;
 }
@@ -109,28 +123,53 @@ h1 span{
 @media(max-width:800px){
   .menu-btn{
     display: block;
+    width:60px;
+    padding-right: 15px;
+  
   }
 
   .menu-btn:hover{
    transform:scale(1.1);
+   
   
   }
 
   .nav-header{
     padding: 0;
+    background-color: #484872;
+    height: 77px;
+    border-bottom: 3px solid orange;
   }
 
   .nav-logo{
     position: absolute;
     top:10px;
-    background-color:#484872;
-    box-shadow: 2px 2px 5px;
-    
+    width:130px;
+    padding-left: 8px;;
   }
 
   h1 span{
     font-size: 40px;
   }
+
+.info-owner-portfolio{
+  width:90%;
+  padding-top: 100px;
+  /* font-size: 6vmin; */
+}
+
+.owner-image{
+  width:100%;
+  margin-bottom: 0px;
+}
+
+.btn-contact-info{
+  font-size:7vmin;
+}
+
+.owner-name{
+  font-size:6vmin;
+}
 
   h1{
     font-size: 40px;
@@ -142,32 +181,89 @@ h1 span{
     height: 107vh;
     align-items: center;
     justify-content: center;
-    background: #484872;
+    background-color: rgb(95, 125, 149);;
     margin-top: -900px;
     transition: all 1s ease;
-
   }
 
   .mobile-menu{
     margin-top: 0;
-    border-bottom-right-radius: 50%;
   }
   
   .ul-navlinks li{
     margin: 20px auto;
-
+  
   }
 
    li a{
-    font-size: 4vmin;
+    font-size: 7vmin;
+    font-weight: bold;
+  }
+
+  li a:hover{
+    display:contents;
   }
 
   .mobile-home{
     color:orange;
-    font-size: 5vmin;
+    font-size: 8vmin;
     font-weight: 900;
   }
 
+  .btn-link-In,.btn-github{
+    font-size:30px;
+    margin-bottom: 10px;
+  }
+
+ .content{
+  width:100%;
+ }
+ 
+ .frontend{
+  width:92%;
+  text-align: center;
+ }
+
+ .stack1{
+  width:95%
+ }
+
+ .list-items{
+  text-align: center;
+ }
+
+ .experience-frontend-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* width:5px */
+ }
+
+ .frontend{
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  
+ }
+
+ .job-experience{
+  margin-top: 10px;
+  margin-left: 12px;
+  margin-right:12px;
+
+ }
+
+ .images{
+  max-width:100%;
+  padding-right: 10px;
+ }
+
+ .footer{
+  height:20vh
+ }
+  
 }
 
 .background-image{
@@ -214,15 +310,15 @@ h1 span{
 
 .owner-greetings{
   font-size: x-large;
-  /* color:white; */
+  font-weight: 600;
 }
 
  .owner-name{
   font-weight: 900;
   margin-top: 10px;
-  font-size:larger;
+  font-size: 4vmin;
   line-height: 25px;
-  /* color: white; */
+
 }
 
 .owner-job{
@@ -272,19 +368,18 @@ h1 span{
 .btn-link-In,.btn-github{
   padding-left: 5px;
   padding-right: 5px;
+
 }
   
 .about-container{
- background-color: rgba(74, 210, 149, 0.5);
+ background-color: rgb(95, 125, 149);
  display: flex;
  flex-wrap: wrap;
  flex-direction: column-reverse;
  text-align:center;
  border-top-left-radius: 10px;
  border-top-right-radius: 10px;
- margin-right: 38px;
- margin-left:38px;
- /* flex-direction: column; */
+ margin:0px 10px;
  justify-content:start;
  row-gap: 20px;
  column-gap: 50px;
@@ -292,7 +387,7 @@ h1 span{
 
 .about-know-me{
   margin-top:80px;
-  color:whitesmoke;
+  color:black;
   text-align: center;
   font-weight: 600;
   opacity: 0.5;
@@ -301,7 +396,7 @@ h1 span{
 .about-heading{
   text-align: center;
   font-weight: 700;
-  font-size: x-large;
+  font-size: 4vmin;
   margin-top: 70px;
   margin-bottom:50px;
   color: orange;
@@ -309,20 +404,35 @@ h1 span{
 
 .about-text{
   margin-top:10px;
-  font-size:x-large;
-  font-weight: 600;
-  color:darkblue;
+  font-size:4vmin;
+  font-weight: bolder;
+  color:rgba(247, 200, 113, 0.975);
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  justify-content: center;
+  vertical-align: middle;
 }
 
-  .about-message-edu,.about-message-lang{
+  .about-message-edu{
     margin-top: 10px;
-    background-color:white;
+    background-color:rgb(240, 242, 242);
     color:black;
     padding-top: 10px;
     text-align: center;
+    transform: translateY(-2000px);
+    transition:all 2s ease-in-out;
+    z-index: 5;
  } 
+
+ .about-message-lang{
+    margin-top: 10px;
+    background-color:rgb(240, 242, 242);
+    color:black;
+    padding-top: 10px;
+    text-align: center;
+    transform: translateX(1000px);
+    transition: all 2s ease;
+ }
 
  .about-message-goal{
   margin-top: 10px;
@@ -340,7 +450,7 @@ h1 span{
 
 .content{
   display: grid;
-  background-color:rgba(110, 163, 51, 0.4);;;
+  /* background-color:rgb(95, 125, 149); */
   padding-top:10px;
   border-radius: 10px;
   text-align: center;
@@ -351,31 +461,41 @@ h1 span{
 .experience-heading{
   text-align: center;
   font-weight: bold;
-  font-size: x-large;
+  font-size: 4vmin;
   margin-top: 70px;
   margin-bottom:50px;
-  color: blueviolet;
+  color: orange;
 }
 
 .experience-frontend-container{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap:15px;
-  background-color: darkblue;
+  background-color: white;
    text-align: center;
    border-top-right-radius: 20px;
    border-top-left-radius: 20px;
-   overflow: hidden;
-   margin-right: 38px;
-   margin-left: 38px;
+   margin-left: 10px;
+   transition: all 1s ease-in-out;
 }
 
- .frontend,.job-experience{
-  background-color: orange;
+ .frontend{
+  background-color: rgba(246, 162, 5, 0.652);
   padding: 5px 5px;
   font-weight:bold;
-  font-size:x-large;
+  font-size:4vmin;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+ }
+
+
+ .job-experience{
+    background-color: rgba(246, 162, 5, 0.652);
+  padding: 5px 5px;
+  font-weight:bold;
+  font-size:4vmin;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -384,16 +504,16 @@ h1 span{
 
 .list-items{
   padding-top: 5px;
-  line-height:25px;
-  font-weight:bold;
-  background-color: lightskyblue;
+  line-height:30px;
+  color:antiquewhite;
+  font-size: 4.5vmin;
+  font-weight: 600;
+  background-color: rgb(95, 125, 149);;
   padding-left: 20px;
   padding-right:20px;
   padding-bottom: 15px;
   border-top-right-radius: 50px;
   gap:10px;
-  /* border-bottom-right-radius: 50px; */
-  /* border-bottom-left-radius: 50px; */
   border-top-left-radius: 50px;
   list-style-type:none;
   width:400px;
@@ -401,7 +521,7 @@ h1 span{
 
 .experience-know-me{
   margin-top:80px;
-  color:whitesmoke;
+  color:black;
   text-align: center;
   font-weight: 600;
   opacity: 0.5;
@@ -422,27 +542,29 @@ h1 span{
 
 .number-experience{
   padding-top: 20px;
+  text-align: center;
   line-height:25px;
-  background-color:lightskyblue ;
-  font-size:large;
-  padding-bottom:50px;
+  color:antiquewhite;
+  background-color:rgb(95, 125, 149); ;
+  font-size:4.5vmin;
+  padding-bottom:70px;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
   font-weight:bold;
-  width: 350px;
+  width: 400px;
 }
 
 .project-container{
   display:flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width:100%;
-  margin-left: 39px ;
-  margin-right:39px;
+  margin-left: 15px ;
   row-gap: 15px;
   column-gap: 15px;
   border-top-left-radius: 12px;
   border-top-left-radius: 12px;
-  background-color:black;
   padding-bottom: 10px;
 }
 
@@ -452,11 +574,18 @@ h1 span{
   margin-top: 10px;
 }
 
+.images:hover{
+  width:330px;
+  /* rotate:calc(1deg); */
+  transform:scale(1);
+  transition: all 1.5s ease;
+}
+
 .project-name{
   text-align: center;
   margin-top: 8px;
   font-weight:700;
-  font-size: x-large;
+  font-size: 3.5vmin;
 
 }
 
@@ -466,7 +595,7 @@ h1 span{
 
 .project-name span{
   font-weight: bold;
-  font-size:large;
+  font-size:4vmin;
   color:orange;
 }
 
@@ -476,21 +605,26 @@ h1 span{
   border-radius: 5px;
   border: none;
   font-weight: bold;
-  font-size:large;
+  font-size:4vmin;
   animation-name: open-me;
-  animation-direction:reverse;
-  animation-duration: 5s;
-  animation-delay:7s ;
-  animation-timing-function:ease-in-out;
+  animation-direction:normal;
+  animation-duration: 7s;
+  transition: 3s all ease-in-out ;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
-  transform-origin: -50%;
+  
+}
+
+.project-button:hover{
+  opacity: 0.325;
+  background-color:beige ;
+  transition: all 0.5s ease;
 }
 
 @keyframes open-me{
-  15%{transform: scale(-0.1);}
-
-  100%{background-color: deeppink; color: white;
+  0%{width: 109px; background-color: #5f7d95;
+  transition:5s}
+  100%{background-color: rgba(252, 166, 7, 0.47); color: white;
   }
 
 }
@@ -522,7 +656,8 @@ h1 span{
 .social-media a,.email,.number{
   text-decoration: none;
   line-height: 25px;
-  /* font-weight: 700 */
+  color:rgb(95, 125, 149);
+  font-weight: 700
   
 }
 
@@ -550,7 +685,7 @@ h1 span{
   font-size: x-large;
   margin-top: 70px;
   margin-bottom:50px;
-  color: blueviolet;
+  color: orange;
 }
 
  .write1,.write2,.write3,.write4,.experience-years{
@@ -578,11 +713,29 @@ h1 span{
 }
 
 .footer{
-  height: 40vh;
+  height: 20vh;
   display: flex;
   background-color: black;
   justify-content: center;
   align-items: center;
+}
+
+/* Animation for about-portfolio */
+
+.about-message-goal{
+  transform: translateX(-1000px);
+  transition:all 1s ease;
+  filter: blur(5px);
+  opacity: 0;
+}
+
+.about-message-goal{
+  opacity: 1;
+  filter: blur(0);
+}
+
+.sec.animation{
+  transform: translateX(0);
 }
 
 
