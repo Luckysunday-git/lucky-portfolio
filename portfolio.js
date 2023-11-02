@@ -14,15 +14,13 @@ footerDate.innerHTML = currentDate;
 
 // for fixed navbar onscroll
 
-let height = 0;
+  let height = 0;
   let scrollHeight = () => { 
    return height + scrollY;
 }
 
   window.addEventListener('scroll', () =>{
   const scroll = Math.floor(scrollHeight());
-  console.log(scroll);
-
   let navHeader = document.querySelector('.nav-header');
   
   if(!scroll){
@@ -38,9 +36,6 @@ let height = 0;
  const animateEdu = document.querySelector('.about-message-edu');
  
  if( scroll >= 250 && scroll <= 900){
-  //  animateGoal.style.backgroundColor = `rgb(${95, 125, 149})`;
-  //  animateLang.style.backgroundColor = 'white';
-  //  animateEdu.style.backgroundColor = 'white';s
    animateGoal.style.transform = `translateX(${scroll * 0 }px)`
    animateLang.style.transform = `translateX(${scroll * 0})`
    animateEdu.style.transform = `translateY(${scroll * 0})`
@@ -62,7 +57,6 @@ mobileScreens.forEach((mobileScreen) => {
   const aboutContainer = document.querySelector('.about-container');
   const listItems = document.querySelector('.list-items');
   const numberExperience = document.querySelector('.number-experience');
-  const nav_Links = document.querySelector('.ul-navlinks');
   const experienceContainer = document.querySelector('.experience-frontend-container');
   const darkThemeContainer = document.querySelector('.dark-theme-container');
   const lightMode = document.querySelector('.light-mode');
@@ -95,7 +89,7 @@ mobileScreens.forEach((mobileScreen) => {
     lightMode.style.transform = `translate(-${20}px)`
     aboutContent.style.backgroundColor = 'initial'; 
     aboutContainer.style.backgroundColor = '#5f7d95';
-    
+
   }
 
 })
