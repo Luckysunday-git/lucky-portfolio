@@ -15,7 +15,7 @@ body{
   scroll-behavior: smooth;
   font-family: arial,sans-serif;
   font-style: normal;
-  background-color: wheat;
+  background-color: white;
 
 }
 
@@ -135,7 +135,7 @@ h1 span{
 
   .nav-header{
     padding: 0;
-    background-color: #484872;
+    background-color: #5f7d95;
     height: 77px;
     border-bottom: 3px solid orange;
   }
@@ -153,17 +153,27 @@ h1 span{
 
 .info-owner-portfolio{
   width:90%;
+  margin-top: 0px;
   padding-top: 100px;
   
 }
 
-.owner-image{
+body{
+  background-color: #6060e1ca;
+}
+
+/* .owner-image{
   width:100%;
   margin-bottom: 0px;
+} */
+
+.images{
+  padding-right:10px;
+  width:100%;
 }
 
 .btn-contact-info{
-  font-size:7vmin;
+  font-size:4vmin;
 }
 
 .owner-name{
@@ -196,7 +206,7 @@ h1 span{
   }
 
    li a{
-    font-size: 7vmin;
+    font-size: 6.5vmin;
     font-weight: bold;
     overflow: hidden;
   }
@@ -239,6 +249,9 @@ h1 span{
   align-items: center;
   justify-content: center;
   text-align: center;
+  width:100%;
+  /* padding-right: 20px; */
+  /* padding-right:10px; */
 
  }
 
@@ -251,8 +264,8 @@ h1 span{
 
  .job-experience{
   margin-top: 10px;
-  margin-left: 12px;
-  margin-right:12px;
+  margin-left: 9px;
+  margin-right:25px;
 
  }
 
@@ -387,7 +400,7 @@ h1 span{
   color:black;
   text-align: center;
   font-weight: 800;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .about-heading{
@@ -520,7 +533,7 @@ h1 span{
   color:black;
   text-align: center;
   font-weight: 800;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .experience-text{
@@ -710,6 +723,7 @@ h1 span{
 .footer{
   height: 20vh;
   display: flex;
+  border-top: 1px solid white;
   background-color: black;
   justify-content: center;
   align-items: center;
