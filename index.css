@@ -24,7 +24,7 @@ body{
   display: flex;
   justify-content: space-between;
   height: 75px;
-  padding-right: 60px;
+  /* padding-right: 60px; */
   border-bottom: 1px solid rgba(101, 122,24) ;
   position: fixed;
   top: 0;
@@ -386,7 +386,7 @@ h1 span{
   margin-top:80px;
   color:black;
   text-align: center;
-  font-weight: 600;
+  font-weight: 800;
   opacity: 0.5;
 }
 
@@ -471,6 +471,7 @@ h1 span{
    border-top-right-radius: 20px;
    border-top-left-radius: 20px;
    margin-left: 10px;
+   margin-right:10px;
    transition: all 1s ease-in-out;
 }
 
@@ -518,7 +519,7 @@ h1 span{
   margin-top:80px;
   color:black;
   text-align: center;
-  font-weight: 600;
+  font-weight: 800;
   opacity: 0.5;
 }
 
