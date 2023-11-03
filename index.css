@@ -37,6 +37,7 @@ body{
 .dark-theme-container{
   position: fixed;
   top: 80px;
+  height:33px;
   padding: 2px 7px;
   border-radius:2px;
   box-shadow: 1px 3px orange;
