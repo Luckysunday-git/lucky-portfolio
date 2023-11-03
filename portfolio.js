@@ -53,6 +53,8 @@ mobileScreens.forEach((mobileScreen) => {
 
 })
   
+  // Codes for dark/light theme button;the page turns either light or dark when clicking the button.
+
   const aboutContent = document.querySelector('.content');
   const aboutContainer = document.querySelector('.about-container');
   const listItems = document.querySelector('.list-items');
