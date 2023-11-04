@@ -11,7 +11,7 @@ menuBtn.addEventListener('click', () =>{
 const footerDate = document.querySelector('.date');
 const currentDate = new Date().getFullYear();
 footerDate.innerHTML = currentDate;
-
+console.log(currentDate);
 // for fixed navbar onscroll
 
   let height = 0;
@@ -95,10 +95,13 @@ mobileScreens.forEach((mobileScreen) => {
   }
 
 })
+  
+//pre-loader
+const preLoader = document.getElementById('pre-loader');
+const preLoaderContainer = document.querySelector('.pre-loader-container');
+window.addEventListener('load', () =>{
+  preLoader.style.display = 'none';
+   preLoaderContainer.style.display = 'none';
 
-
-
-
-
-
+ })
 

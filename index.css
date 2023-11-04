@@ -12,7 +12,6 @@ html{
 
 body{
   overflow-x: hidden;
-  scroll-behavior: smooth;
   font-family: arial,sans-serif;
   font-style: normal;
   background-color: white;
@@ -56,6 +55,7 @@ body{
   transform: translateX(-20px);
   transition: all 0.1s ease;
   cursor:pointer;
+  z-index: 5
 }
 
 .nav-logo{
@@ -111,11 +111,12 @@ h1 span{
 
 .menu-btn{
   position: absolute;
-  top: 25px;
+  top: 20px;
   right: 30px;
   width: 30px;
   cursor:pointer;
   display: none;
+
 }
 
    /* Here are styles for mobile device */
@@ -163,11 +164,6 @@ body{
   background-color: #6060e1ca;
 }
 
-/* .owner-image{
-  width:100%;
-  margin-bottom: 0px;
-} */
-
 .images{
   padding-right:10px;
   width:100%;
@@ -188,6 +184,7 @@ body{
   .ul-navlinks{
     flex-direction: column;
     overflow: hidden;
+    position:relative;
     width: 100%;
     height: 107vh;
     align-items: center;
@@ -251,10 +248,9 @@ body{
   justify-content: center;
   text-align: center;
   width:100%;
-  /* padding-right: 20px; */
-  /* padding-right:10px; */
 
  }
+
 
  .frontend{
   align-items: center;
@@ -745,6 +741,38 @@ body{
   filter: blur(0);
 }
 
+
+/* pre-loader */
+
+.pre-loader-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffa500;
+  width:100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1998;
+}
+
+ #pre-loader{
+  background-color:#5f7d95;
+  color:white;
+  position: fixed;
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 10px solid white;
+  border-top: 10px solid black;
+  animation: ani 0.3s infinite;
+  z-index: 1999;
+} 
+
+@keyframes ani{
+  to{
+    transform: rotate(360deg);
+  }
+}
 
 
 
