@@ -76,7 +76,7 @@ mobileScreens.forEach((mobileScreen) => {
     
   }else if(lightMode.innerHTML === 'Dark Mode'){
     lightMode.innerHTML = 'Light Mode';
-    document.body.style.backgroundColor = 'wheat';
+    document.documentElement.style.backgroundColor = 'wheat';
     lightMode.style.transform = `translate(-${20}px)`
     aboutContent.style.backgroundColor = 'initial';
     aboutContainer.style.backgroundColor = '#5f7d95';
