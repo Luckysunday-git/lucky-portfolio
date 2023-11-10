@@ -14,7 +14,7 @@ body{
   overflow-x: hidden;
   font-family: arial,sans-serif;
   font-style: normal;
-  background-color: white;
+  background-color: wheat;
 
 }
 
@@ -428,7 +428,7 @@ body{
   margin-top:10px;
   font-size:4vmin;
   font-weight: bolder;
-  color:rgba(247, 200, 113, 0.975);
+  color:orange;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   justify-content: center;
@@ -671,13 +671,14 @@ body{
  justify-content: space-around;
  align-items: center;
  gap: 15px;
+ opacity: 0.8;
 }
 
 .social-media a,.email,.number{
   text-decoration: none;
   line-height: 25px;
-  color:rgb(95, 125, 149);
   font-weight: 700;
+  opacity: 0.8;
 }
 
 .email,.number{
