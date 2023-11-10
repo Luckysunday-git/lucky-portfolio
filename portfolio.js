@@ -1,4 +1,5 @@
 // fixing the mobile screen menu icon onclick.
+
 const menuBtn = document.querySelector('.menu-btn');
 const navLinks = document.querySelector('.ul-navlinks');
 menuBtn.addEventListener('click', () =>{
@@ -12,6 +13,7 @@ const footerDate = document.querySelector('.date');
 const currentDate = new Date().getFullYear();
 footerDate.innerHTML = currentDate;
 console.log(currentDate);
+
 // for fixed navbar onscroll
 
   let height = 0;
@@ -22,7 +24,6 @@ console.log(currentDate);
   window.addEventListener('scroll', () =>{
   const scroll = Math.floor(scrollHeight());
   let navHeader = document.querySelector('.nav-header');
-  
   if(!scroll){
   navHeader.style.backgroundColor = 'transparent';
   navHeader.style.borderBottom = 'transparent';
@@ -34,11 +35,17 @@ console.log(currentDate);
  const animateGoal = document.querySelector('.about-message-goal');
  const animateLang = document.querySelector('.about-message-lang');
  const animateEdu = document.querySelector('.about-message-edu');
- 
  if( scroll >= 250 && scroll <= 900){
    animateGoal.style.transform = `translateX(${scroll * 0 }px)`
    animateLang.style.transform = `translateX(${scroll * 0})`
-   animateEdu.style.transform = `translateY(${scroll * 0})`
+   animateEdu.style.transform = `translateY(${scroll * 0})`;
+ }
+  //  Adding back-to-top button
+  const upArrow = document.querySelector('.up-arrow');
+  if(scroll >= 1300){
+  upArrow.style.display = 'block';
+ }else{
+  upArrow.style.display = 'none';
  }
   
 })
@@ -62,6 +69,8 @@ mobileScreens.forEach((mobileScreen) => {
   const experienceContainer = document.querySelector('.experience-frontend-container');
   const darkThemeContainer = document.querySelector('.dark-theme-container');
   const lightMode = document.querySelector('.light-mode');
+  const footer = document.querySelector('.footer');
+  const navHeader = document.querySelector('.nav-header');
 
    lightMode.addEventListener('click', () => {
      if( lightMode.innerHTML === 'Light Mode'){
@@ -73,6 +82,7 @@ mobileScreens.forEach((mobileScreen) => {
     experienceContainer.style.backgroundColor = 'black';
     listItems.style.backgroundColor = 'black';
     numberExperience.style.backgroundColor = 'black';
+    footer.style.backgroundColor = 'black';
     
   }else if(lightMode.innerHTML === 'Dark Mode'){
     lightMode.innerHTML = 'Light Mode';
@@ -83,7 +93,7 @@ mobileScreens.forEach((mobileScreen) => {
     experienceContainer.style.backgroundColor = 'white';
     listItems.style.backgroundColor = '#5f7d95';
     numberExperience.style.backgroundColor = '#5f7d95';
-    
+    footer.style.backgroundColor = '#5f7d95';
     
   }else{
     lightMode.innerHTML = 'Light Mode';
@@ -91,17 +101,18 @@ mobileScreens.forEach((mobileScreen) => {
     lightMode.style.transform = `translate(-${20}px)`
     aboutContent.style.backgroundColor = 'initial'; 
     aboutContainer.style.backgroundColor = '#5f7d95';
-
+    footer.style.backgroundColor = '#5f7d95';
   }
 
-})
-  
-//pre-loader
-const preLoader = document.getElementById('pre-loader');
-const preLoaderContainer = document.querySelector('.pre-loader-container');
-window.addEventListener('load', () =>{
-  preLoader.style.display = 'none';
-   preLoaderContainer.style.display = 'none';
-
  })
+  
+  //pre-loader
+    const preLoader = document.getElementById('pre-loader');
+    const upArrow = document.querySelector('.up-arrow');
+    const preLoaderContainer = document.querySelector('.pre-loader-container');
+    window.addEventListener('load', () =>{
+    preLoader.style.display = 'none';
+    preLoaderContainer.style.display = 'none';
+    upArrow.style.display = 'none';
+  })
 

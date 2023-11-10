@@ -23,7 +23,6 @@ body{
   display: flex;
   justify-content: space-between;
   height: 75px;
-  /* padding-right: 60px; */
   border-bottom: 1px solid rgba(101, 122,24) ;
   position: fixed;
   top: 0;
@@ -96,7 +95,6 @@ li a:active{
 }
 
 h1{
-  /* color:black; */
   color:#484872;
   font-size: 60;
   font-weight:700;
@@ -170,12 +168,20 @@ body{
   width:100%;
 }
 
-.btn-contact-info{
-  font-size:4vmin;
+.btn-contact-info,.btn-download-cv{
+  font-size:5vmin;
 }
 
-.owner-name{
-  font-size:6vmin;
+.lucky-name{
+  font-size:5.5vmin;
+}
+
+.owner-job{
+  font-size:5.5vmin;
+}
+
+.owner-greetings{
+  font-size: 5vmin;
 }
 
   h1{
@@ -275,7 +281,7 @@ body{
  .footer{
   height:20vh
  }
-  
+
 }
 
 
@@ -337,11 +343,13 @@ body{
 }
 
 .btn-download-cv,.btn-contact-info{
-  padding:4px 3px;
+  padding:4px 6px;
   border-radius: 15px;
   border: none;
   gap: 5px;
+  background-color: whitesmoke;
   color: #000;
+  opacity: 0.8;
 }
 
 .btn-contact-info{
@@ -350,18 +358,20 @@ body{
 }
 
 .btn-download-cv:hover{
-  background-color: rgb(213, 217, 217);
+  background-color: whitesmoke;
   cursor:pointer;
+  opacity: 0.5;
 }
 
 .btn-download-cv:active{
   background-color:rgb(213, 217, 217) ;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .btn-contact-info:hover{
-  background-color: rgb(213, 217, 217);
+  background-color: whitesmoke;
   cursor: pointer;
+  opacity: 0.5;
 }
 
 .btn-contact-info:active{
@@ -377,6 +387,10 @@ body{
   padding-left: 5px;
   padding-right: 5px;
 
+}
+
+.btn-link-In,.btn-github:hover{
+  cursor:pointer;
 }
   
 .about-container{
@@ -483,7 +497,6 @@ body{
    border-top-left-radius: 20px;
    margin-left: 10px;
    margin-right:10px;
-   transition: all 1s ease-in-out;
 }
 
  .frontend{
@@ -574,6 +587,7 @@ body{
   border-top-left-radius: 12px;
   border-top-left-radius: 12px;
   padding-bottom: 10px;
+  z-index: 10
 }
 
 .images{
@@ -616,7 +630,7 @@ body{
   animation-name: open-me;
   animation-direction:normal;
   animation-duration: 7s;
-  transition: 1s all ease-in-out ;
+  transition: 1.5s all ease-in-out ;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
   
@@ -648,8 +662,8 @@ body{
   align-items:center;
   justify-content: space-between;
   margin-bottom: 50px;
-  margin-left: 39px;
-  margin-right: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .social-media{
@@ -657,15 +671,13 @@ body{
  justify-content: space-around;
  align-items: center;
  gap: 15px;
- 
 }
 
 .social-media a,.email,.number{
   text-decoration: none;
   line-height: 25px;
   color:rgb(95, 125, 149);
-  font-weight: 700
-  
+  font-weight: 700;
 }
 
 .email,.number{
@@ -681,7 +693,7 @@ body{
 }
 
 .all-right{
-  color:rgba(174, 4, 4, 0.765);
+  color:#ae0404c3;
 }
   
 
@@ -725,6 +737,7 @@ body{
   background-color: #5f7d95;
   justify-content: center;
   align-items: center;
+
 }
 
 /* Animation for about-portfolio */
@@ -775,6 +788,51 @@ body{
   }
 }
 
+ .btn-back-to-top{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items:center ;
+  border:none;
+  background: transparent;
+  margin-bottom: 55px;
+} 
+
+.btn-back-to-top a{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+  font-size: 50px;
+  margin-right:20px;
+}
+
+.up-arrow{
+  position: fixed;
+  display: none;
+  border-radius: 2px;;
+  color:black;
+  background-color: orange;
+  font-size: xx-large;
+  margin-bottom: 450px;
+  height:70px;
+  font-weight:1000;
+  animation-name: upArrow;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-fill-mode:both;
+
+}
+
+@keyframes upArrow{
+ 0%{transform: translateY(-40px);}
+ 
+}
 
 
   
