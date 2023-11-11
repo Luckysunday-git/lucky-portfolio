@@ -779,11 +779,11 @@ body{
   border-radius: 140%;
   border: 10px solid white;
   border-top: 10px solid black;
-  animation: ani 0.3s infinite;
+  animation: preloader 0.3s infinite;
   z-index: 1999;
 } 
 
-@keyframes ani{
+@keyframes preloader{
   to{
     transform: rotate(360deg);
   }
