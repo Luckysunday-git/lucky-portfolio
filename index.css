@@ -14,12 +14,14 @@ body{
   overflow-x: hidden;
   font-family: arial,sans-serif;
   font-style: normal;
-  background-color: wheat;
+  background-color: white;
+  
 
 }
 
 .nav-header{
   height: 50vh;
+  padding-right: 70px;
   display: flex;
   justify-content: space-between;
   height: 75px;
@@ -33,13 +35,13 @@ body{
 }
 
 .dark-theme-container{
-  position: fixed;
+  position: fixed; 
   top: 80px;
   height:33px;
   padding: 2px 7px;
   border-radius:2px;
-  box-shadow: 1px 3px orange;
-  background-color: rgba(255, 166, 0, 0.652);
+  box-shadow: 1px 3px goldenrod;
+  background-color: goldenrod;
   z-index: 6;
   border: 2px solid ghostwhite;
 }
@@ -49,7 +51,7 @@ body{
   color:#484872;
   font-size: 14;
   border-radius: 10px;
-  background-color: orange;
+  background-color: goldenrod;
   padding: 4px 12px;
   transform: translateX(-20px);
   transition: all 0.1s ease;
@@ -71,16 +73,16 @@ body{
 }
 
 li a{
-  color: orange;
+  color:orange;
   text-decoration: none;
   padding: 25px;
   font-weight: 750;
-  font-size: 4vmin;
+  font-size: 18px;
 }
 
 
 li a:hover{
-  text-decoration: underline 3px solid rgb(213, 217, 217);
+  text-decoration: underline 3px solid #d5d9d9;
   padding-bottom:2px;
   border-bottom:3px;
   transition: all 1s ease;
@@ -96,14 +98,14 @@ li a:active{
 
 h1{
   color:#484872;
-  font-size: 60;
+  font-size: 50;
   font-weight:700;
   margin-left: 20px;
   
 }
 
 h1 span{
-  color:orange;
+  color:goldenrod;
   font-weight: 800;
 }
 
@@ -124,7 +126,6 @@ h1 span{
     display: block;
     width:60px;
     padding-right: 15px;
-  
   }
 
   .menu-btn:hover{
@@ -161,6 +162,7 @@ h1 span{
 
 body{
   background-color: #6060e1ca;
+  border: 1px solid goldenrod;
 }
 
 .images{
@@ -169,7 +171,7 @@ body{
 }
 
 .btn-contact-info,.btn-download-cv{
-  font-size:5vmin;
+  font-size:3vmin;
 }
 
 .lucky-name{
@@ -211,9 +213,14 @@ body{
   }
 
    li a{
-    font-size: 6.5vmin;
+    font-size: 5.5vmin;
     font-weight: bold;
     overflow: hidden;
+    color: orange;
+  }
+
+  h1 span{
+    color:orange;
   }
 
   li a:hover{
@@ -258,6 +265,12 @@ body{
 
  }
 
+ .write1,.write2,.write3,.write4{
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 10px;;
+ }
+
 
  .frontend{
   align-items: center;
@@ -282,6 +295,12 @@ body{
   height:20vh
  }
 
+ .container-items1 img{
+  width:500px;;
+  margin:10px;
+  border-radius:10px;
+ }
+
 }
 
 
@@ -296,10 +315,10 @@ body{
    width:100%;
 }
 
-#about,
-#experience,
-#projects,#contact{
-  height: 8vh;
+#about,#experience,
+#contact{
+  height: 25vh;
+  margin-top: 20px;
 }
 
 .info-owner-portfolio{
@@ -319,7 +338,7 @@ body{
   object-fit: contain;
   width: 250px;
   border-radius:175px;
-  
+  border: 3px solid orange;
 }
 
 .owner-greetings{
@@ -394,7 +413,7 @@ body{
 }
   
 .about-container{
- background-color: rgb(95, 125, 149);
+ background-color: rgb(240, 242, 242);
  display: flex;
  flex-wrap: wrap;
  flex-direction: column-reverse;
@@ -408,11 +427,11 @@ body{
 }
 
 .about-know-me{
-  margin-top:80px;
-  color:black;
+  /* margin-top:20px; */
+  color:#484872;
   text-align: center;
   font-weight: 800;
-  opacity: 1;
+
 }
 
 .about-heading{
@@ -421,14 +440,14 @@ body{
   font-size: 4vmin;
   margin-top: 70px;
   margin-bottom:50px;
-  color: orange;
+  color: goldenrod;
 }
 
 .about-text{
   margin-top:10px;
   font-size:4vmin;
   font-weight: bolder;
-  color:orange;
+  color:#ba5d2c;;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   justify-content: center;
@@ -484,7 +503,7 @@ body{
   font-size: 4vmin;
   margin-top: 70px;
   margin-bottom:50px;
-  color: orange;
+  color: goldenrod;
 }
 
 .experience-frontend-container{
@@ -500,7 +519,7 @@ body{
 }
 
  .frontend{
-  background-color: rgba(246, 162, 5, 0.652);
+  background-color:rgb(213, 217, 217);
   padding: 5px 5px;
   font-weight:bold;
   font-size:4vmin;
@@ -511,7 +530,7 @@ body{
  }
 
  .job-experience{
-    background-color: rgba(246, 162, 5, 0.652);
+    background-color: rgb(213, 217, 217);
   padding: 5px 5px;
   font-weight:bold;
   font-size:4vmin;
@@ -524,11 +543,10 @@ body{
 .list-items{
   padding-top: 5px;
   line-height:30px;
-  color:antiquewhite;
-  font-size: 4vmin;
+  color:#484872;
+  font-size: 3vmin;
   font-weight: 600;
-  border: 2px solid #f6a205a6;
-  background-color: rgb(95, 125, 149);;
+  background-color:#f0f2f2;
   padding-left: 20px;
   padding-right:20px;
   padding-bottom: 15px;
@@ -540,7 +558,6 @@ body{
 }
 
 .experience-know-me{
-  margin-top:80px;
   color:black;
   text-align: center;
   font-weight: 800;
@@ -548,7 +565,6 @@ body{
 }
 
 .experience-text{
-  margin-top:10px;
   font-size:large;
   font-weight: 600;
   color:darkblue;
@@ -564,10 +580,9 @@ body{
   padding-top: 20px;
   text-align: center;
   line-height:25px;
-  color:antiquewhite;
-  border: 2px solid #f6a205a6;
-  background-color:rgb(95, 125, 149); ;
-  font-size:4.5vmin;
+  color:#484872;
+  background-color:#f0f2f2;
+  font-size:3.5vmin;
   padding-bottom:70px;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
@@ -575,84 +590,17 @@ body{
   width: 400px;
 }
 
-.project-container{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width:100%;
-  margin-left: 15px ;
-  row-gap: 15px;
-  column-gap: 15px;
-  border-top-left-radius: 12px;
-  border-top-left-radius: 12px;
-  padding-bottom: 10px;
-  z-index: 10
-}
+.container-project{
+  display: flex;
+  flex-direction: row;
+  
+} 
 
-.images{
-  width: 340px; 
-  border-radius: 10px;
-  margin-top: 10px;
-}
-
-.images:hover{
-  width:330px;
-  transform:scale(1);
-  transition: all 1.5s ease;
-}
-
-.project-name{
-  text-align: center;
-  margin-top: 8px;
-  font-weight:700;
-  font-size: 3.5vmin;
-
-}
-
-.project-name{
-  align-items: center; 
-}
-
-.project-name span{
-  font-weight: bold;
-  font-size:4vmin;
-  color:orange;
-}
-
-.project-button{
-  margin-left: 10px;
-  padding: 8px 8px 5px 5px;
-  border-radius: 5px;
-  border: none;
-  font-weight: bold;
-  font-size:4vmin;
-  animation-name: open-me;
-  animation-direction:normal;
-  animation-duration: 7s;
-  transition: 1.5s all ease-in-out ;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
+.project-image img{
+  
   
 }
 
-.project-button:hover{
-  opacity: 0.325;
-  background-color:beige ;
-  transition: all 0.5s ease;
-}
-
-@keyframes open-me{
-  0%{ background-color: orange;
-  transition:all 3s ease}
-  100%{background-color:#5f7d95; color: black;
-    transition:all 5s ease;}
-
-}
-
-.project-button:hover{
-  cursor: pointer;
-}
 
 /* Here are styles for PORTFOLIO-CONTACT */
 
@@ -660,7 +608,8 @@ body{
   display:flex;
   flex-wrap: wrap;
   align-items:center;
-  justify-content: space-between;
+  justify-content: center;
+  width:90%;
   margin-bottom: 50px;
   margin-left: 50px;
   margin-right: 50px;
@@ -671,14 +620,13 @@ body{
  justify-content: space-around;
  align-items: center;
  gap: 15px;
- opacity: 0.8;
 }
 
 .social-media a,.email,.number{
   text-decoration: none;
   line-height: 25px;
   font-weight: 700;
-  opacity: 0.8;
+  color:#ba5d2c;
 }
 
 .email,.number{
@@ -696,15 +644,17 @@ body{
 .all-right{
   color:#ae0404c3;
 }
-  
 
-.contact-heading{
-  text-align: center;
-  font-weight: 700;
-  font-size: x-large;
-  margin-top: 70px;
-  margin-bottom:50px;
-  color: orange;
+
+.contact-container{
+  display: flex;
+  justify-content:center ;
+  align-items:baseline;
+}
+
+ .contact-container div{
+   position:absolute;
+  color: goldenrod;
 }
 
  .write1,.write2,.write3,.write4,.experience-years{
@@ -724,6 +674,7 @@ body{
 
 .firstname,.lastname,.phonenumber,.email{
   display:flex;
+  color:#ba5d2c;
 }
 
 .label{
@@ -735,7 +686,7 @@ body{
   height: 20vh;
   display: flex;
   border-top: 1px solid white;
-  background-color: #5f7d95;
+  background-color: black;
   justify-content: center;
   align-items: center;
 
@@ -771,7 +722,7 @@ body{
 }
 
  #pre-loader{
-  background-color:#ffa500;
+  background-color:goldenrod;
   color:white;
   position: fixed;
   width:70px;
@@ -800,7 +751,7 @@ body{
   justify-content: flex-end;
   align-items:center ;
   border:none;
-  background: transparent;
+  background: goldenrod;
   margin-bottom: 55px;
 } 
 
@@ -818,7 +769,7 @@ body{
   display: none;
   border-radius: 2px;;
   color:black;
-  background-color: orange;
+  background-color: goldenrod;
   font-size: xx-large;
   margin-bottom: 450px;
   height:70px;
@@ -834,11 +785,136 @@ body{
 
 @keyframes upArrow{
  0%{transform: translateY(-40px);}
- 
+}
+
+/* project2 style starts here */
+  
+.project2{
+  text-align:center;
+  color: orange;
+}
+
+.project2-images{
+  display:flex;
+}
+
+.project-containers{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-items1 img{
+  width: 350px;
+  height:400px;
+  object-fit: cover;
+
+}
+
+.images-content{
+  text-align: center;
+}
+
+.container-items1 p{
+  margin-top: 0;
+  margin-bottom: 3px;
+  font-weight: bold;
+  margin: 10px;
+  
+}
+
+.container-items1 button{
+  color: whitesmoke;
+  border:none;
+  font-weight: bold;
+  font-size: medium;
+  padding: 10px;
+  cursor:pointer;
+  margin-bottom: 50px;
+  background-color:orange;
+  border-radius: 10%;
+}
+
+.container-items1 button:active{
+ opacity: 0.5;
+background-color:#ffa6009e;
+}
+
+.container-items1 button:hover{
+  opacity: 0.7;;
 }
 
 
+.form-container{
+  text-align: center;
+  padding-top: 10px;
+  background-color: #d5d9d9;
   
+  
+}
+
+ label{
+  color:orange;
+  font-weight: bolder;
+  font-size: larger;
+  margin-left: 10px;
+  font-family: sans-serif;
+
+}
+
+.form-container input{
+  margin: 15px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  align-content: center;
+
+}
+
+::placeholder{
+  color:rgb(95, 125, 149);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+textarea{
+  margin-top: 30px;
+  border:none;
+  min-width: 50px;;
+  min-height: 50px;
+  border-radius: 7px;
+
+}
+
+textarea::placeholder{
+ padding-top: 10px;
+ padding-left: 10px;
+ color: rgb(95, 125, 149);
+ 
+}
+
+.submit-btn{
+  color: white;
+  font-weight:bold;
+  font-size:medium;
+  background-color: orange;
+  margin-top: 30px;
+  margin-bottom: 50px;;
+  padding: 10px 20px;
+  border:none;
+  cursor:pointer;
+  border-radius: 5px;
+  box-shadow: calc(0,1.5 red);
+  
+}
+
+.submit-btn:hover{
+  opacity:0.7;
+}
+
+
 
 
 

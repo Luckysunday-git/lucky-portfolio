@@ -28,8 +28,8 @@ console.log(currentDate);
   navHeader.style.backgroundColor = 'transparent';
   navHeader.style.borderBottom = 'transparent';
   }else if(scroll){
-  navHeader.style.backgroundColor = '#5f7d95';
-  navHeader.style.borderBottom = `${2}px solid black`;
+  navHeader.style.backgroundColor = '#d5d9d9';
+  navHeader.style.borderBottom = `${3}px solid black`;
 }
  
  const animateGoal = document.querySelector('.about-message-goal');
@@ -71,6 +71,8 @@ mobileScreens.forEach((mobileScreen) => {
   const lightMode = document.querySelector('.light-mode');
   const footer = document.querySelector('.footer');
   const navHeader = document.querySelector('.nav-header');
+  const listItemsDark = document.querySelector('.list-items');
+  const contactContainer = document.querySelector('.form-container');
 
    lightMode.addEventListener('click', () => {
      if( lightMode.innerHTML === 'Light Mode'){
@@ -80,28 +82,33 @@ mobileScreens.forEach((mobileScreen) => {
     aboutContent.style.backgroundColor = 'black';
     aboutContainer.style.backgroundColor = 'black';
     experienceContainer.style.backgroundColor = 'black';
-    listItems.style.backgroundColor = 'black';
-    numberExperience.style.backgroundColor = 'black';
+    listItems.style.backgroundColor = '#fff';
+    numberExperience.style.backgroundColor = '#fff';
+    contactContainer.style.backgroundColor = 'black';
     footer.style.backgroundColor = 'black';
     
   }else if(lightMode.innerHTML === 'Dark Mode'){
     lightMode.innerHTML = 'Light Mode';
-    document.body.style.backgroundColor = 'wheat';
+    document.body.style.backgroundColor = 'white';
     lightMode.style.transform = `translate(-${20}px)`
-    aboutContent.style.backgroundColor = 'initial';
-    aboutContainer.style.backgroundColor = '#5f7d95';
+    aboutContent.style.backgroundColor = 'white';
+    aboutContainer.style.backgroundColor = '#d5d9d9';
     experienceContainer.style.backgroundColor = 'white';
-    listItems.style.backgroundColor = '#5f7d95';
-    numberExperience.style.backgroundColor = '#5f7d95';
-    footer.style.backgroundColor = '#5f7d95';
+    listItems.style.backgroundColor = '#f0f2f2';
+    numberExperience.style.backgroundColor = '#f0f2f2';
+    contactContainer.style.backgroundColor = '#d5d9d9';
+    footer.style.backgroundColor = 'black';
+    
     
   }else{
     lightMode.innerHTML = 'Light Mode';
-    document.body.style.backgroundColor = 'wheat';
+    document.body.style.backgroundColor = 'white';
     lightMode.style.transform = `translate(-${20}px)`
-    aboutContent.style.backgroundColor = 'initial'; 
+    aboutContent.style.backgroundColor = 'white'; 
     aboutContainer.style.backgroundColor = '#5f7d95';
-    footer.style.backgroundColor = '#5f7d95';
+    // contactContainer.style.backgroundColor = 'inherent';
+    footer.style.backgroundColor = 'black';
+    contactContainer.style.backgroundColor = '#d5d9d9';
   }
 
  })
