@@ -59,7 +59,6 @@ mobileScreens.forEach((mobileScreen) => {
   })
 
 })
-  
   // Codes for dark/light theme button;the page turns either light or dark when clicking the button.
 
   const aboutContent = document.querySelector('.content');
@@ -73,6 +72,8 @@ mobileScreens.forEach((mobileScreen) => {
   const navHeader = document.querySelector('.nav-header');
   const listItemsDark = document.querySelector('.list-items');
   const contactContainer = document.querySelector('.form-container');
+  
+   const setLightMode = () =>{
 
    lightMode.addEventListener('click', () => {
      if( lightMode.innerHTML === 'Light Mode'){
@@ -106,13 +107,17 @@ mobileScreens.forEach((mobileScreen) => {
     lightMode.style.transform = `translate(-${20}px)`
     aboutContent.style.backgroundColor = 'white'; 
     aboutContainer.style.backgroundColor = '#5f7d95';
-    // contactContainer.style.backgroundColor = 'inherent';
     footer.style.backgroundColor = 'black';
     contactContainer.style.backgroundColor = '#d5d9d9';
+
+  }
+   
+   })
+
   }
 
- })
-  
+  setLightMode();
+
   //pre-loader
     const preLoader = document.getElementById('pre-loader');
     const upArrow = document.querySelector('.up-arrow');
@@ -122,4 +127,11 @@ mobileScreens.forEach((mobileScreen) => {
     preLoaderContainer.style.display = 'none';
     upArrow.style.display = 'none';
   })
+
+const submitBtn = document.querySelector('.submit-btn');
+
+submitBtn.addEventListener('click', (e) =>{
+  e.preventDefault();
+  console.log(submitBtn)
+})
 
