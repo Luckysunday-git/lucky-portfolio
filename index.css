@@ -236,11 +236,6 @@ body{
     font-weight: 900;
   }
 
-  .btn-link-In,.btn-github{
-    /* font-size:30px;
-    margin-bottom: 10px; */
-  }
-
  .content{
   width:100%;
  }
@@ -598,13 +593,7 @@ body{
   display: flex;
   flex-direction: row;
   
-} 
-
-.project-image img{
-  
-  
 }
-
 
 /* Here are styles for PORTFOLIO-CONTACT */
 
@@ -986,6 +975,8 @@ textarea::before{
     padding-bottom: 15px;
   }
 }
+
+
 
 
 
