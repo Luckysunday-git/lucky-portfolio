@@ -400,7 +400,13 @@ body{
   margin-top: 5px;
 }
 
-.btn-link-In,.btn-github{
+/* .social-info a{
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor:pointer;
+} */
+
+.btn-link-In,.btn-github,.btn-linkedin{
   padding-left: 5px;
   padding-right: 5px;
 
@@ -921,7 +927,7 @@ background-color:#ffa6009e;
 textarea{
   margin-top: 30px;
   border:none;
-  min-width: 50px;;
+  min-width: 50px;; 
   min-height: 50px;
   border-radius: 7px;
   outline:none;
@@ -974,14 +980,4 @@ textarea::before{
     padding-top: 15px;
     padding-bottom: 15px;
   }
-}
-
-
-
-
-
-
-
-
-
-
+} 
