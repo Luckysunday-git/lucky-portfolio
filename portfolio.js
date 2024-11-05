@@ -116,7 +116,7 @@ mobileScreens.forEach((mobileScreen) => {
 
   }
 
-  setLightMode();
+  setLightMode()
 
   //pre-loader
     const preLoader = document.getElementById('pre-loader');
